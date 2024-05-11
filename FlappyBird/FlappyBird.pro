@@ -13,8 +13,11 @@ CONFIG += c++17
 SOURCES += \
     base.cpp \
     bird.cpp \
+    gameover.cpp \
     main.cpp \
     flappybird.cpp \
+    map.cpp \
+    score.cpp \
     tube.cpp
 
 HEADERS += \
@@ -22,6 +25,9 @@ HEADERS += \
     bird.h \
     config.h \
     flappybird.h \
+    gameover.h \
+    map.h \
+    score.h \
     tube.h
 
 FORMS += \

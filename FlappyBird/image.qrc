@@ -9,6 +9,8 @@
         <file>image/bird1_1.png</file>
         <file>image/bird1_2.png</file>
         <file>image/button_play.png</file>
+        <file>image/die.mp3</file>
+        <file>image/fly.mp3</file>
         <file>image/land.png</file>
         <file>image/number_score_00.png</file>
         <file>image/number_score_01.png</file>
@@ -22,10 +24,9 @@
         <file>image/number_score_09.png</file>
         <file>image/pipe_down.png</file>
         <file>image/pipe_up.png</file>
+        <file>image/score.mp3</file>
+        <file>image/start.png</file>
         <file>image/text_game_over.png</file>
         <file>image/text_ready.png</file>
-        <file>image/die.mp3</file>
-        <file>image/fly.mp3</file>
-        <file>image/score.mp3</file>
     </qresource>
 </RCC>

@@ -1,5 +1,7 @@
 QT       += core gui
 
+QT += multimedia
+
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++17
@@ -9,12 +11,18 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    base.cpp \
+    bird.cpp \
     main.cpp \
-    flappybird.cpp
+    flappybird.cpp \
+    tube.cpp
 
 HEADERS += \
+    base.h \
+    bird.h \
     config.h \
-    flappybird.h
+    flappybird.h \
+    tube.h
 
 FORMS += \
     flappybird.ui
@@ -26,3 +34,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     image.qrc
+
+

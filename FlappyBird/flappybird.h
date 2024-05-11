@@ -2,6 +2,7 @@
 #define FLAPPYBIRD_H
 
 #include <QMainWindow>
+#include <QSoundEffect>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {

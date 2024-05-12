@@ -1,0 +1,10 @@
+debug/base.o
+debug/bird.o
+debug/gameover.o
+debug/main.o
+debug/mainwindow.o
+debug/map.o
+debug/score.o
+debug/tube.o
+debug/qrc_image.o
+debug/moc_mainwindow.o

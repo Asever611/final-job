@@ -1,0 +1,10 @@
+release/base.o
+release/bird.o
+release/gameover.o
+release/main.o
+release/mainwindow.o
+release/map.o
+release/score.o
+release/tube.o
+release/qrc_image.o
+release/moc_mainwindow.o

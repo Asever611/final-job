@@ -136,14 +136,13 @@ debug/qrc_image.cpp: ../../image.qrc \
 		../../image/number_score_03.png \
 		../../image/land.png \
 		../../image/number_score_07.png \
-		../../image/score.wav \
 		../../image/text_ready.png \
-		../../image/fly.wav \
 		../../image/bg_day.png \
 		../../image/bird0_0.png \
 		../../image/bird0_1.png \
 		../../image/bird0_2.png \
 		../../image/number_score_01.png \
+		../../image/score1.m4a \
 		../../image/number_score_06.png \
 		../../image/bg_night.png \
 		../../image/bird1_2.png \
@@ -151,6 +150,7 @@ debug/qrc_image.cpp: ../../image.qrc \
 		../../image/pipe_up.png \
 		../../image/bird1_0.png \
 		../../image/pipe_down.png \
+		../../image/fly1.m4a \
 		../../image/number_score_04.png \
 		../../image/number_score_02.png \
 		../../image/die.wav \
@@ -654,7 +654,25 @@ debug/bird.o: ../../bird.cpp ../../bird.h \
 		../../../6.7.0/mingw_64/include/QtCore/qobject_impl.h \
 		../../../6.7.0/mingw_64/include/QtCore/qbindingstorage.h \
 		../../../6.7.0/mingw_64/include/QtCore/qurl.h \
-		../../config.h
+		../../config.h \
+		../../../6.7.0/mingw_64/include/QtMultimedia/QMediaPlayer \
+		../../../6.7.0/mingw_64/include/QtMultimedia/qmediaplayer.h \
+		../../../6.7.0/mingw_64/include/QtMultimedia/qmediaenumdebug.h \
+		../../../6.7.0/mingw_64/include/QtCore/qmetaobject.h \
+		../../../6.7.0/mingw_64/include/QtCore/qvariant.h \
+		../../../6.7.0/mingw_64/include/QtCore/qdebug.h \
+		../../../6.7.0/mingw_64/include/QtCore/qtextstream.h \
+		../../../6.7.0/mingw_64/include/QtCore/qcontiguouscache.h \
+		../../../6.7.0/mingw_64/include/QtCore/qsharedpointer.h \
+		../../../6.7.0/mingw_64/include/QtCore/qsharedpointer_impl.h \
+		../../../6.7.0/mingw_64/include/QtCore/qmap.h \
+		../../../6.7.0/mingw_64/include/QtCore/qshareddata_impl.h \
+		../../../6.7.0/mingw_64/include/QtCore/qset.h \
+		../../../6.7.0/mingw_64/include/QtCore/qhash.h \
+		../../../6.7.0/mingw_64/include/QtCore/qvarlengtharray.h \
+		../../../6.7.0/mingw_64/include/QtMultimedia/qtaudio.h \
+		../../../6.7.0/mingw_64/include/QtMultimedia/QAudioOutput \
+		../../../6.7.0/mingw_64/include/QtMultimedia/qaudiooutput.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\bird.o ..\..\bird.cpp
 
 debug/gameover.o: ../../gameover.cpp ../../gameover.h \
@@ -1234,7 +1252,14 @@ debug/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		../../../6.7.0/mingw_64/include/QtWidgets/QStatusBar \
 		../../../6.7.0/mingw_64/include/QtWidgets/qstatusbar.h \
 		../../../6.7.0/mingw_64/include/QtWidgets/QWidget \
-		../../../6.7.0/mingw_64/include/QtCore/QDebug
+		../../../6.7.0/mingw_64/include/QtCore/QDebug \
+		../../../6.7.0/mingw_64/include/QtMultimedia/QMediaPlayer \
+		../../../6.7.0/mingw_64/include/QtMultimedia/qmediaplayer.h \
+		../../../6.7.0/mingw_64/include/QtMultimedia/qmediaenumdebug.h \
+		../../../6.7.0/mingw_64/include/QtCore/qmetaobject.h \
+		../../../6.7.0/mingw_64/include/QtMultimedia/qtaudio.h \
+		../../../6.7.0/mingw_64/include/QtMultimedia/QAudioOutput \
+		../../../6.7.0/mingw_64/include/QtMultimedia/qaudiooutput.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o ..\..\mainwindow.cpp
 
 debug/map.o: ../../map.cpp ../../map.h \

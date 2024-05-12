@@ -1,6 +1,7 @@
 #include "bird.h"
 #include"config.h"
-
+#include<QtMultimedia/QMediaPlayer>
+#include<QtMultimedia/QAudioOutput>
 Bird::Bird()
 {
     birdmap.load(BIRD_UP_PATH);
@@ -40,25 +41,10 @@ void Bird::birdposition()
     }
     rec.moveTo(m_x,m_y);
 }
-void Bird::dead(){
+void Bird::dead()
+{
     birdmap.load(BIRD_DEAD_PATH);
     m_x-=TUBE_SPEED;
     m_y+=BIRD_DEAD_SPEED;
-    if(sound==0){
 
-
-        QSoundEffect effect;
-        effect.setSource(QUrl::fromLocalFile(CRASH_PATH));
-        effect.setLoopCount(1);
-        effect.setVolume(1);
-        effect.play();
-
-        QSoundEffect effect1;
-        effect1.setSource(QUrl::fromLocalFile(BIRD_DROP_SOUND));
-        effect1.setLoopCount(1);
-        effect1.setVolume(1);
-        effect1.play();
-
-        sound=1;
-    }
 }

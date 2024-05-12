@@ -26,12 +26,12 @@
 #define BIRD_DOWN_PATH ":/image/bird1_2.png"
 #define BIRD_DOWN_SPEED 6
 #define BIRD_UP_SPEED 60
-#define BIRD_FLAP1_SOUND ":/image/fly.wav"
-#define BIRD_FLAP2_SOUND ":/image/fly.wav"
+#define BIRD_FLAP1_SOUND "qrc:/image/fly1.m4a"
+#define BIRD_FLAP2_SOUND "qrc:/image/fly1.m4a"
 #define BIRD_DEAD_SPEED 9
 #define BIRD_DEAD_PATH ":/image/bird1_0.png"
-#define BIRD_DROP_SOUND ":/image/die.wav"
-#define BIRD_SCORE_SOUND ":/image/score.wav"
+#define BIRD_DROP_SOUND "qrc:/image/die.wav"
+#define BIRD_SCORE_SOUND "qrc:/image/score1.m4a"
 
 //管道
 #define TUBE_SPEED 1
@@ -42,7 +42,7 @@
 
 //死亡
 #define GAMEOVER_PATH ":/image/text_game_over.png"
-#define CRASH_PATH ":/image/die.wav"
+#define CRASH_PATH "qrc:/image/die.wav"
 
 //得分
 #define S_0 ":/image/number_score_00.png"

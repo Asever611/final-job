@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include<QDebug>
+#include<QtMultimedia/QMediaPlayer>
+#include<QtMultimedia/QAudioOutput>
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -204,6 +206,19 @@ void MainWindow::updatePosition()
         if(gameover.state==1)
         {
             bird.dead();
+            if(bird.sound==0){
+
+
+                QAudioOutput *audioOutput=new  QAudioOutput(this);
+                QMediaPlayer *startwhistle=new QMediaPlayer(this);
+                startwhistle->setAudioOutput(audioOutput );
+                audioOutput->setVolume(0.8);
+                startwhistle->setSource(QUrl(BIRD_DROP_SOUND));
+                startwhistle->play();
+
+
+                bird.sound=1;
+            }
         }
         else
         {
@@ -224,20 +239,23 @@ void MainWindow::keyPressEvent(QKeyEvent *e)
         y-=BIRD_UP_SPEED;
         if(gameover.state==0)
         {
-            QSoundEffect effect;
-            effect.setSource(QUrl::fromLocalFile(BIRD_FLAP2_SOUND));
-            effect.setLoopCount(QSoundEffect::Infinite);
-            effect.setVolume(1);
-            effect.play();
+            QAudioOutput *audioOutput=new  QAudioOutput(this);
+            QMediaPlayer *startwhistle=new QMediaPlayer(this);
+            startwhistle->setAudioOutput(audioOutput );
+            audioOutput->setVolume(0.8);
+            startwhistle->setSource(QUrl(BIRD_FLAP1_SOUND));
+            startwhistle->play();
         }
         if(start==0)
         {
             start=1;
-            QSoundEffect effect;
-            effect.setSource(QUrl::fromLocalFile(BIRD_FLAP1_SOUND));
-            effect.setLoopCount(QSoundEffect::Infinite);
-            effect.setVolume(1);
-            effect.play();
+            QAudioOutput *audioOutput=new  QAudioOutput(this);
+            QMediaPlayer *startwhistle=new QMediaPlayer(this);
+            startwhistle->setAudioOutput(audioOutput );
+            audioOutput->setVolume(0.8);
+            startwhistle->setSource(QUrl(BIRD_FLAP1_SOUND));
+            startwhistle->play();
+
         }
     }
     bird.setposition(bird.m_x,y);
@@ -279,11 +297,12 @@ void MainWindow::score()
     if(bird.m_x>=tube[point].m_x&&bird.m_x<=tube[point].m_x+tube[point].rec.width()&&gameover.state==0)
     {
         point++;
-        QSoundEffect effect;
-        effect.setSource(QUrl::fromLocalFile(BIRD_SCORE_SOUND));
-        effect.setLoopCount(QSoundEffect::Infinite);
-        effect.setVolume(1);
-        effect.play();
+        QAudioOutput *audioOutput=new  QAudioOutput(this);
+        QMediaPlayer *startwhistle=new QMediaPlayer(this);
+        startwhistle->setAudioOutput(audioOutput );
+        audioOutput->setVolume(0.8);
+        startwhistle->setSource(QUrl(BIRD_SCORE_SOUND));
+        startwhistle->play();
     }
 }
 void MainWindow::speedup()

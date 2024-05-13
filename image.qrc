@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/bg_day.png</file>
+        <file>image/bg_night.png</file>
+        <file>image/bird0_0.png</file>
+        <file>image/bird0_1.png</file>
+        <file>image/bird0_2.png</file>
+        <file>image/bird1_0.png</file>
+        <file>image/bird1_1.png</file>
+        <file>image/bird1_2.png</file>
+        <file>image/button_play.png</file>
+        <file>image/land.png</file>
+        <file>image/number_score_00.png</file>
+        <file>image/number_score_01.png</file>
+        <file>image/number_score_02.png</file>
+        <file>image/number_score_03.png</file>
+        <file>image/number_score_04.png</file>
+        <file>image/number_score_05.png</file>
+        <file>image/number_score_06.png</file>
+        <file>image/number_score_07.png</file>
+        <file>image/number_score_08.png</file>
+        <file>image/number_score_09.png</file>
+        <file>image/pipe_down.png</file>
+        <file>image/pipe_up.png</file>
+        <file>image/start.png</file>
+        <file>image/text_game_over.png</file>
+        <file>image/text_ready.png</file>
+        <file>image/die.wav</file>
+        <file>image/fly1.m4a</file>
+        <file>image/score1.m4a</file>
+        <file>image/ico.ico</file>
+    </qresource>
+</RCC>
